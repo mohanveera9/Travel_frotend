@@ -1,0 +1,14 @@
+.admin-dashboard {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background-color: #343a40;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.main-content {
+    padding: 2rem;
+} 

@@ -1,0 +1,287 @@
+.package__section {
+    padding: 3rem 0;
+    background: #f7f7f7;
+}
+
+.package__title {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+}
+
+.package__subtitle {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.package__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.package__card {
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.package__image img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package__top {
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.package__top h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.package__price {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.package__price h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.package__price span {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.package__content {
+    padding: 1.5rem;
+}
+
+.package__content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.package__content ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.package__btn {
+    background-color: var(--secondary-color) !important;
+    padding: 0.6rem;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+    border-radius: 14px 0 14px 0;
+    font-style: italic;
+    color: #fff;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.package__btn:hover {
+    transform: scale(1.1);
+    color: purple;
+}
+
+.package__image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.package__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.package__card:hover .package__image img {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1200px) {
+    .package__card {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .package__card {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .package__card {
+        width: 45%;
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .package__card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .package__top h3 {
+        font-size: 1rem;
+    }
+
+    .package__btn {
+        padding: 0.2rem 0.5rem !important;
+        font-size: 0.8rem;
+    }
+
+    .package__content ul li {
+        font-size: 0.8rem;
+    }
+}
+
+.booking__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.booking__modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close__modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--heading-color);
+    transition: color 0.3s ease;
+}
+
+.close__modal:hover {
+    color: var(--primary-color);
+}
+
+.booking__modal-content h3 {
+    color: var(--heading-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.booking__modal {
+    animation: fadeIn 0.3s ease;
+}
+
+.booking__modal-content {
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .booking__modal-content {
+        width: 95%;
+        padding: 1rem;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.package__section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+}
+
+.package__section p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.alert-danger {
+    background-color: #ffe6e6;
+    color: #dc3545;
+    border: 1px solid #ffcccc;
+}
+
+.alert-success {
+    background-color: #e6ffe6;
+    color: #28a745;
+    border: 1px solid #ccffcc;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 

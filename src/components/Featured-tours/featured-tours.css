@@ -1,0 +1,111 @@
+/* Add these styles to frontend/src/components/Featured-tours/featured-tours.css */
+
+/* Container for service cards */
+.services__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+    justify-content: center;
+}
+
+.service__card {
+    padding: 2rem;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 280px; /* Fixed width for consistent sizing */
+    min-height: 300px; /* Minimum height for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.service__card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--secondary-color) 0px 8px 24px;
+}
+
+.service__icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    background: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.service__icon i {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.service__title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: var(--heading-color);
+}
+
+.service__desc {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1200px) {
+    .service__card {
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .service__card {
+        width: 240px;
+        padding: 1.5rem;
+    }
+    
+    .service__title {
+        font-size: 1.2rem;
+    }
+    
+    .service__desc {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .services__container {
+        gap: 1.5rem;
+    }
+
+    .service__card {
+        width: calc(50% - 2rem);
+        min-height: 280px;
+    }
+    
+    .service__icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .service__icon i {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .service__card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

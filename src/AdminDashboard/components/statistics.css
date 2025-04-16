@@ -1,0 +1,99 @@
+.statistics {
+    padding: 1rem;
+}
+
+.stat-card {
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.stat-title {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.recent-bookings-table {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info .username {
+    font-weight: 600;
+}
+
+.user-info .email {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.status-badge.confirmed {
+    background: #e6f7e6;
+    color: #28a745;
+}
+
+.status-badge.pending {
+    background: #fff3e6;
+    color: #fd7e14;
+}
+
+.statistics-loading,
+.statistics-error {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.statistics-error {
+    color: #dc3545;
+}
+
+.statistics-error button {
+    padding: 0.5rem 2rem;
+}
+
+.recent-bookings-table th,
+.recent-bookings-table td {
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.recent-bookings-table thead {
+    background-color: #f8f9fa;
+}
+
+.recent-bookings-table tbody tr:hover {
+    background-color: #f8f9fa;
+} 
